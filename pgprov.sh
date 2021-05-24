@@ -3,8 +3,8 @@
 USERNAME=$2
 PASSWORD=$3
 
-ping() {
-    ansible-playbook ping.yml
+pgping() {
+    ansible-playbook pgping.yml
 }
 
 pgpool_nodes() {
