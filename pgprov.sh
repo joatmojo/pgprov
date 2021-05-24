@@ -3,6 +3,10 @@
 USERNAME=$2
 PASSWORD=$3
 
+ping() {
+    ansible-playbook ping.yml
+}
+
 pgpool_nodes() {
     ansible-playbook pgpool_nodes.yml
 }
@@ -16,8 +20,8 @@ pgpool_user() {
 }
 
 case "$1" in
-    ping)
-        ping
+    pgping)
+        pgping
         ;;
     pgpool_hba)
         pgpool_hba
