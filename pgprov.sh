@@ -4,7 +4,7 @@ USERNAME=$2
 PASSWORD=$3
 
 pgpool_user() {
-    ansible-playbook pgpool_user.yml --extra-var "username=${USERNAME} password=${PASSWORD}" --ask-become-pass
+    ansible-playbook /home/atmo/pgprov/pgpool_user.yml --extra-var "username=${USERNAME} password=${PASSWORD}" --ask-become-pass
 }
 
 case "$1" in
