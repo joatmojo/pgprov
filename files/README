@@ -27,4 +27,5 @@ sh pgprov.sh
 
 7. postgres_pgconf (no need yet)            Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
                                             usage: sh command.sh postgres_pgconf
-                                            
+
+
