@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 USERNAME=$2
 PASSWORD=$3
 

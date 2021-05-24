@@ -9,7 +9,6 @@
         group: root
         mode: 0755
 
-
     - name: PGPool Attach Node
       shell: /data/pgpool/pgpool_attach.sh
 
