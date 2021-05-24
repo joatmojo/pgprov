@@ -1,6 +1,6 @@
-User guide script Command:
+User guide script pgprov.sh:
 
-sh command.sh
+sh pgprov.sh
 
 1. pgpool_nodes                             Show the status of backend node from pgpool, equal to command:
                                             psql -U hcuser -d hcdb -h localhost -p 9444 -c "show pool_nodes"
