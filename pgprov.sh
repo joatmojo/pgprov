@@ -34,8 +34,8 @@ case "$1" in
 		pgpool_user
 	fi
         ;;
-    pgpool_node)
-	pgpool_node
+    pgpool_nodes)
+	pgpool_nodes
 	;;
     pgpool_conf)
         pgpool_conf
