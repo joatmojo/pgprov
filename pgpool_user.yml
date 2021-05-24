@@ -1,9 +1,10 @@
 ---
 - hosts: pgpool
+  become: true
   tasks:
     - name: Menambah User baru untuk akses database
       expect:
-        command: pg_md5  -u {{ username }} -p
+        command: pg_md5 --md5auth --username={{ username }} -p
         responses:
           password: "{{ password }}"
 
