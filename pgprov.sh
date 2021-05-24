@@ -11,6 +11,10 @@ pgpool_nodes() {
     ansible-playbook pgpool_nodes.yml
 }
 
+pgpool_hba() {
+    ansible-playbook pgpool_hba.yml
+}
+
 pgpool_attach() {
     ansible-playbook pgpool_attach.yml
 }

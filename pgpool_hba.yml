@@ -1,0 +1,15 @@
+---
+- hosts: pgpool
+  tasks:
+    - name: replace pool_hba file versi terbaru
+      copy: 
+        src: ./files/pool_hba.conf
+        dest: /etc/pgpool2/pool_hba.conf
+        owner: root
+        group: root
+        mode: 0764         
+
+    - name: Reload service pgpool
+      service:
+        name: pgpool2
+        state: reloaded
