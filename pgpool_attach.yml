@@ -1,8 +1,17 @@
 ---
 - hosts: pgpool
   tasks:
+    - name: copy attach shell
+      copy:
+        src: ./files/pgpool_attach.sh
+        dest: /data/pgpool/pgpool_attach.sh
+        owner: root
+        group: root
+        mode: 0755
+
+
     - name: PGPool Attach Node
-      shell: /home/atmo/pgprov/files/pgpool_attach.sh
+      shell: /data/pgpool/pgpool_attach.sh
 
     - name: Restart service pgpool
       service:
