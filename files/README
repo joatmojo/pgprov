@@ -1,0 +1,29 @@
+User guide script Command:
+
+sh command.sh
+
+1. pgpool_hba                               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+                                            usage: sh command.sh pgpool_hba
+
+2. pgpool_user                              Create new user and password for database user at PGPOOL nodes
+                                            usage: sh command.sh pgpool_user <username> <password>
+                                            sh command.sh pgpool_user <username> <password>
+                                            sh command.sh pgpool_user userdb passdb
+
+3. pgpool_attach                            Recover down/recovery node at PGPOOL nodes, can be confirmed with
+                                            psql -U hcuser -d hcdb -h localhost -p 9444 -c "show pool_nodes"
+                                            Script on node must be located at /data/pgpool/pgpool_attach.sh
+                                            usage: sh command.sh pgpool_attach
+
+4. pgpool_nodes                             Show the status of backend node from pgpool, equal to command:
+                                            psql -U hcuser -d hcdb -h localhost -p 9444 -c "show pool_nodes"
+                                            usage: sh command.sh pgpool_nodes
+
+5. postgres_hba                             Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+                                            usage: sh command.sh postgres_hba
+
+6. postgres_pgconf                          Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
+                                            usage: sh command.sh postgres_pgconf
+
+7. pgpool_conf                              Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
+                                            usage: sh command.sh pgpool_conf

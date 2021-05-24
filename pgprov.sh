@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 USERNAME=$2
 PASSWORD=$3
 
@@ -17,6 +17,10 @@ pgpool_attach() {
 
 pgpool_user() {
     ansible-playbook pgpool_user.yml --extra-var "username=${USERNAME} password=${PASSWORD}"
+}
+
+readme() {
+    cat /home/atmo/pgprov/files/README 
 }
 
 case "$1" in
