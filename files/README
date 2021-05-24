@@ -19,7 +19,7 @@ sh pgprov.sh
 4. pgpool_hba                               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh pgpool_hba
 
-5. pgpool_conf                              Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
+5. pgpool_conf                              Copy pgpool.conf file from local machine pgpool.conf to all PGPOOL Nodes
                                             usage: sh command.sh pgpool_conf
 
 6. postgres_hba (no need yet)               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
