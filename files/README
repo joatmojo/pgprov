@@ -16,7 +16,7 @@ sh pgprov.sh
                                             Script on node must be located at /data/pgpool/pgpool_attach.sh
                                             usage: sh command.sh pgpool_attach
 
-4. pgpool_hba  (no need yet)                Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+4. pgpool_hba                               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh pgpool_hba
 
 5. postgres_hba (no need yet)               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
