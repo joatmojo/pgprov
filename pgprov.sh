@@ -3,6 +3,14 @@
 USERNAME=$2
 PASSWORD=$3
 
+pgpool_node() {
+    ansible-playbook pgpool_nodes.yml
+}
+
+pgpool_attach() {
+    ansible-playbook pgpool_attach.yml
+}
+
 pgpool_user() {
     ansible-playbook pgpool_user.yml --extra-var "username=${USERNAME} password=${PASSWORD}"
 }
