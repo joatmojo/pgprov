@@ -1,0 +1,13 @@
+[pgall]
+pgpool1
+pgpool2
+sumenep
+banjarbaru
+
+[pgbackend]
+sumenep
+banjarbaru
+
+[pgpool]
+pgpool1
+pgpool2
