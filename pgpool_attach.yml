@@ -1,0 +1,10 @@
+---
+- hosts: pgpool
+  tasks:
+    - name: PGPool Attach Node
+      shell: /home/atmo/pgprov/files/pgpool_attach.sh
+
+    - name: Restart service pgpool
+      service:
+        name: pgpool2
+        state: restarted
