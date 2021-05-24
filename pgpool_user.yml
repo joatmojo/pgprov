@@ -1,6 +1,8 @@
 ---
-- hosts: pgpool
+- name: Adding new user on pool_passwd
+  hosts: pgpool
   become: true
+  
   tasks:
     - name: Menambah User baru untuk akses database
       expect:
