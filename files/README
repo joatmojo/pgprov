@@ -19,11 +19,11 @@ sh pgprov.sh
 4. pgpool_hba                               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh pgpool_hba
 
-5. postgres_hba (no need yet)               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+5. pgpool_conf                              Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
+                                            usage: sh command.sh pgpool_conf
+
+6. postgres_hba (no need yet)               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh postgres_hba
 
-6. postgres_pgconf (no need yet)            Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
+7. postgres_pgconf (no need yet)            Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
                                             usage: sh command.sh postgres_pgconf
-
-7. pgpool_conf (no need yet)                Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
-                                            usage: sh command.sh pgpool_conf

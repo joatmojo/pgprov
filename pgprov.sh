@@ -19,6 +19,10 @@ pgpool_attach() {
     ansible-playbook pgpool_attach.yml
 }
 
+pgpool_conf() {
+    ansible-playbook pgpool_conf.yml
+}
+
 pgpool_user() {
     ansible-playbook pgpool_user.yml --extra-var "username=${USERNAME} password=${PASSWORD}"
 }
