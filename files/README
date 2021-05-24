@@ -2,8 +2,9 @@ User guide script Command:
 
 sh command.sh
 
-1. pgpool_hba                               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
-                                            usage: sh command.sh pgpool_hba
+1. pgpool_nodes                             Show the status of backend node from pgpool, equal to command:
+                                            psql -U hcuser -d hcdb -h localhost -p 9444 -c "show pool_nodes"
+                                            usage: sh command.sh pgpool_nodes
 
 2. pgpool_user                              Create new user and password for database user at PGPOOL nodes
                                             usage: sh command.sh pgpool_user <username> <password>
@@ -15,15 +16,14 @@ sh command.sh
                                             Script on node must be located at /data/pgpool/pgpool_attach.sh
                                             usage: sh command.sh pgpool_attach
 
-4. pgpool_nodes  (Pending)                  Show the status of backend node from pgpool, equal to command:
-                                            psql -U hcuser -d hcdb -h localhost -p 9444 -c "show pool_nodes"
-                                            usage: sh command.sh pgpool_nodes
+4. pgpool_hba  (no need yet)                Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+                                            usage: sh command.sh pgpool_hba
 
-5. postgres_hba  (Pending)                  Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
+5. postgres_hba (no need yet)               Copy pool_hba file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh postgres_hba
 
-6. postgres_pgconf  (Pending)               Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
+6. postgres_pgconf (no need yet)            Copy postgresql.conf from local machine /etc/ansible/postgres/postgresql.conf
                                             usage: sh command.sh postgres_pgconf
 
-7. pgpool_conf   (Pending)                  Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
+7. pgpool_conf (no need yet)                Copy pgpool.conf file from local machine pool_hba to all PGPOOL Nodes
                                             usage: sh command.sh pgpool_conf
