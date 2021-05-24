@@ -3,7 +3,7 @@
 USERNAME=$2
 PASSWORD=$3
 
-pgpool_node() {
+pgpool_nodes() {
     ansible-playbook pgpool_nodes.yml
 }
 
